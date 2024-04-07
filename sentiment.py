@@ -20,12 +20,11 @@ warnings.filterwarnings('ignore')
 import os
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score,classification_report, ConfusionMatrixDisplay
 
-train_data = pd.read_csv('/Users/yuanweiyun/Desktop/EE6405/train.csv',encoding='latin1')
-test_data = pd.read_csv('/Users/yuanweiyun/Desktop/EE6405/test.csv',encoding='latin1')
+train_data = pd.read_csv('path',encoding='latin1')
+test_data = pd.read_csv('/path',encoding='latin1')
 df = pd.concat([train_data,test_data])
 #print(df.head())
 df.shape
